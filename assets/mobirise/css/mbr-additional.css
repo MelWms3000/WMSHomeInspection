@@ -1501,7 +1501,7 @@ body {
 .cid-rAIgmCqwDK {
   padding-top: 105px;
   padding-bottom: 30px;
-  background-image: url("../../../assets/images/img-540-2000x1500.jpg");
+  background-image: url("../../../assets/images/img-540-2000x15001.jpg");
 }
 .cid-rAIgmCqwDK .mbr-iconfont {
   color: #ffffff;
@@ -3095,7 +3095,7 @@ body {
 .cid-rAZagMhcx2 {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("../../../assets/images/img-540-2000x1500.jpg");
+  background-image: url("../../../assets/images/img-540-2000x15001.jpg");
 }
 .cid-rAZagMhcx2 .card-img span {
   color: #ffffff;
@@ -5338,6 +5338,11 @@ body {
 .cid-rymkR4XcSM .widget-title,
 .cid-rymkR4XcSM .widget-icon {
   color: #274abb;
+}
+.cid-rBaEmSfRlN {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #000000;
 }
 .cid-rymmsa7iCk {
   padding-top: 45px;
