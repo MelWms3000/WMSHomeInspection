@@ -2685,7 +2685,8 @@
               "color": "#000000"
             },
             ".card-block P": {
-              "color": "#000000"
+              "color": "#000000",
+              "text-align": "center"
             },
             ".mbr-author-name": {
               "color": "#506ab9"
