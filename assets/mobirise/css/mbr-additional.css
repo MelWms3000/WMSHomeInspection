@@ -1486,17 +1486,85 @@ body {
 .cid-rymkR4XcSM .widget-icon {
   color: #274abb;
 }
-.cid-rymlmXjmvc {
-  padding-top: 165px;
+.cid-rCvgW0o9e0 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #274abb;
+}
+.cid-rCvgW0o9e0 .row {
+  border-top: 1px solid #ffffff;
+  padding-top: 2rem;
+}
+.cid-rCvgW0o9e0 .mbr-text {
+  line-height: 1.5;
+  color: #656565;
+}
+.cid-rCvgW0o9e0 .mbr-section-title {
+  text-align: left;
+  color: #656565;
+}
+.cid-rCveBX7EKV {
+  padding-top: 135px;
   padding-bottom: 75px;
-  background-image: url("../../../assets/images/img-540-2000x1500.jpg");
+  background-image: url("../../../assets/images/img-541-2000x1500.jpeg");
 }
-.cid-rymlmXjmvc .mbr-section-title {
-  text-align: center;
+.cid-rCveBX7EKV .card-title {
+  line-height: 1.6;
+  padding: 15px 25px;
+  background: linear-gradient(to top, #333333, transparent);
+  margin: 0;
 }
-.cid-rymlmXjmvc .mbr-text,
-.cid-rymlmXjmvc .mbr-section-btn {
-  text-align: center;
+.cid-rCveBX7EKV .card {
+  margin-bottom: 2rem;
+  owerflow: hidden;
+}
+.cid-rCveBX7EKV .card-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.cid-rCveBX7EKV .card-wrapper:hover .card-box {
+  bottom: 0;
+}
+.cid-rCveBX7EKV .card-img {
+  overflow: hidden;
+  position: relative;
+}
+.cid-rCveBX7EKV .p-box {
+  background-color: #274abb;
+  width: 100%;
+  padding: 10px;
+}
+.cid-rCveBX7EKV .card-box {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  bottom: -92px;
+  left: 0;
+  padding: 0px;
+  transition: all 0.3s;
+}
+.cid-rCveBX7EKV .card-box p {
+  display: inline-block;
+  padding: 15px;
+  margin: 0;
+  line-height: 1.2;
+}
+.cid-rCveBX7EKV .mbr-section-title {
+  color: #656565;
+}
+.cid-rCveBX7EKV .card-box {
+  bottom: 0px;
+}
+@media (max-width: 991px) {
+  .cid-rCveBX7EKV .card-box {
+    bottom: 0px;
+  }
+  .cid-rCveBX7EKV .p-box {
+    padding: 0px;
+  }
+  .cid-rCveBX7EKV .card-title {
+    padding: 10px 15px;
+  }
 }
 .cid-rCuWyFA5bs {
   padding-top: 20px;
@@ -1507,7 +1575,7 @@ body {
   z-index: 0;
 }
 .cid-rCuWyFA5bs .mbr-overlay {
-  background: linear-gradient(90deg, #21b968, #1ec5bf);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
 }
 .cid-rCuWyFA5bs h3 {
   color: #000000;
