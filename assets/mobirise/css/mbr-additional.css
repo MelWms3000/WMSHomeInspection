@@ -3138,6 +3138,13 @@ body {
     text-align: center;
   }
 }
+.cid-rBapQCTZyb P {
+  color: #000000;
+  text-align: center;
+}
+.cid-rBapQCTZyb .card-title {
+  text-align: center;
+}
 .cid-rymmsa7iCk {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -4167,12 +4174,12 @@ body {
   }
 }
 .cid-rCuvFQjYXr {
-  padding-top: 90px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
 .cid-rCuvFQjYXr .row {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #274abb;
   padding-top: 2rem;
 }
 .cid-rCuvFQjYXr .mbr-text {
