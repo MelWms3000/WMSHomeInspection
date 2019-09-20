@@ -2273,7 +2273,7 @@ body {
 }
 .cid-rB5KuhmBhc {
   padding-top: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-rB5KuhmBhc .container-fluid {
@@ -4243,7 +4243,7 @@ body {
   font-style: normal;
 }
 .cid-rCv4Pq24z9 P {
-  color: #767676;
+  color: #000000;
 }
 .cid-rCv4Pq24z9 H2 {
   color: #000000;
@@ -4281,71 +4281,75 @@ body {
     padding-left: 0rem;
   }
 }
-.cid-rCuvFQjYXr {
-  padding-top: 30px;
-  padding-bottom: 45px;
+.cid-rCAcaq6yu7 {
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
-.cid-rCuvFQjYXr .row {
-  border-top: 1px solid #274abb;
-  padding-top: 2rem;
+.cid-rCAcaq6yu7 .block-title {
+  color: #274abb;
 }
-.cid-rCuvFQjYXr .mbr-text {
-  line-height: 1.5;
+.cid-rCA7bdeWeQ {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
-.cid-rCuvFQjYXr .container2 {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.cid-rCA7bdeWeQ .mbr-text {
+  color: #000000;
 }
-.cid-rCuvFQjYXr .container2 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+.cid-rCA7bdeWeQ h4 {
+  text-align: center;
 }
-.cid-rCuvFQjYXr .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+.cid-rCA7bdeWeQ p {
+  text-align: center;
 }
-.cid-rCuvFQjYXr .container2:hover input ~ .checkmark {
-  background-color: #ccc;
+.cid-rCA7bdeWeQ .card .card-img span {
+  font-size: 40px;
+  padding: 1.5rem;
+  background: #274abb;
+  border: 2px solid #274abb;
+  color: #ffffff;
+  border-radius: 50%;
+  transition: all .3s;
 }
-.cid-rCuvFQjYXr .container2 input:checked ~ .checkmark {
-  background-color: #274abb;
+.cid-rCA7bdeWeQ .card:hover .card-img span {
+  background: none;
+  color: #274abb;
 }
-.cid-rCuvFQjYXr .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+.cid-rCA7bdeWeQ .card-title,
+.cid-rCA7bdeWeQ .card-img {
+  color: #274abb;
 }
-.cid-rCuvFQjYXr .container2 input:checked ~ .checkmark:after {
-  display: block;
+.cid-rCAb1c90rB {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
-.cid-rCuvFQjYXr .container2 .checkmark:after {
-  left: 10px;
-  top: 7px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.cid-rCAb1c90rB .mbr-text {
+  color: #000000;
 }
-.cid-rCuvFQjYXr .mbr-section-title {
-  text-align: left;
-  color: #656565;
+.cid-rCAb1c90rB h4 {
+  text-align: center;
+}
+.cid-rCAb1c90rB p {
+  text-align: center;
+}
+.cid-rCAb1c90rB .card .card-img span {
+  font-size: 40px;
+  padding: 1.5rem;
+  background: #274abb;
+  border: 2px solid #274abb;
+  color: #ffffff;
+  border-radius: 50%;
+  transition: all .3s;
+}
+.cid-rCAb1c90rB .card:hover .card-img span {
+  background: none;
+  color: #274abb;
+}
+.cid-rCAb1c90rB .card-title,
+.cid-rCAb1c90rB .card-img {
+  color: #274abb;
 }
 #custom-html-3a {
   /* Type valid CSS here */
