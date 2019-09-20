@@ -1686,7 +1686,7 @@ body {
   background-color: #ffffff;
 }
 .cid-rAIl1RSPXw .row {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #274abb;
   padding-top: 2rem;
 }
 .cid-rAIl1RSPXw .mbr-text {
@@ -1704,7 +1704,7 @@ body {
   background-color: #ffffff;
 }
 .cid-rCikmm0DA5 .title {
-  background: #274abb;
+  background: #ffffff;
   width: fit-content;
   display: inline-block;
   padding: 1rem 2rem;
@@ -1713,13 +1713,13 @@ body {
 .cid-rCikmm0DA5 .card-wrapper {
   overflow: hidden;
   height: 100%;
-  background: #274abb;
+  background: #ffffff;
   color: #444444;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.08);
   padding: 0;
 }
 .cid-rCikmm0DA5 .card-title {
-  color: #ffffff;
+  color: #000000;
   margin: 0;
   line-height: 1.3;
   padding-bottom: 1.5rem;
@@ -1750,7 +1750,7 @@ body {
 }
 .cid-rCikmm0DA5 .card-box > p,
 .cid-rCikmm0DA5 .mbr-section-btn {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 .cid-rCikmm0DA5 .mbr-section-title,
