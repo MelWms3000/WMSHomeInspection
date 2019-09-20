@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "WMS Home Inspections",
-    "currentPage": "page1.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "realtym4",
       "title": "RealtyM4",
@@ -36,7 +36,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.7",
     "siteFonts": [],
-    "uniqCompNum": 124,
+    "uniqCompNum": 125,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "witsec-white-label": "on",
@@ -1152,6 +1152,19 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<center><iframe width=\"1045\" height=\"588\" src=\"https://www.youtube.com/embed/-y6xQL3Y3UU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe></center>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_params": {},
+          "_anchor": "custom-html-3g"
         },
         {
           "alias": false,
