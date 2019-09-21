@@ -1,7 +1,7 @@
 {
   "settings": {
-    "name": "WMS Home Inspections",
-    "currentPage": "page1.html",
+    "name": "WMS Home Inspection Services",
+    "currentPage": "WMSHomeInspectionProcess.html",
     "theme": {
       "name": "realtym4",
       "title": "RealtyM4",
@@ -36,19 +36,22 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.7",
     "siteFonts": [],
-    "uniqCompNum": 126,
+    "uniqCompNum": 132,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "witsec-white-label": "on",
     "PWA": {
-      "enabled": true
+      "enabled": true,
+      "name": "",
+      "icon": "@PROJECT_PATH@/assets/images/wmsnewlogo-512x512.png",
+      "themeColor": "#274abb"
     },
     "favicon": "@PROJECT_PATH@/assets/images/img-0008-128x74.png",
     "noImageResize": "",
     "pwa-switcher": "on",
     "siteUrl": "undefined",
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-L6GNN3W8NV\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-L6GNN3W8NV');\r\n</script>",
-    "witsec-form-subject": "WMS Home Inspections"
+    "witsec-form-subject": "WMS Home Inspection Services"
   },
   "pages": {
     "index.html": {
@@ -4517,120 +4520,91 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".card-title": {
-              "line-height": "1.6",
-              "padding": "15px 25px",
-              "background": "linear-gradient(to top, #333333, transparent)",
-              "margin": "0",
-              "text-align": "left",
-              "color": "#ffffff"
+            ".row": {
+              "border-top": "1px solid @line",
+              "padding-top": "2rem"
             },
-            ".card-img": {
+            ".mbr-text": {
+              "line-height": "1.5",
+              "color": "#656565"
+            },
+            ".container2": {
+              "display": "block",
               "position": "relative",
-              "&:hover .card-title": {
-                "background": "linear-gradient(to top, @hover2, transparent)"
-              }
+              "padding-left": "35px",
+              "margin-bottom": "12px",
+              "cursor": "pointer",
+              "font-size": "22px",
+              "-webkit-user-select": "none",
+              "-moz-user-select": "none",
+              "-ms-user-select": "none",
+              "user-select": "none"
             },
-            ".card": {
-              "margin-bottom": "2rem",
-              "owerflow": "hidden"
-            },
-            ".card-wrapper": {
-              "position": "relative",
-              "box-shadow": "0 1px 8px 0 rgba(0, 0, 0, 0.08)"
-            },
-            ".ico2": {
-              "color": "@icocolor",
-              "font-size": "~\"@{icon1}rem\""
-            },
-            ".icobig": {
+            ".container2 input": {
               "position": "absolute",
-              "bottom": "1.5rem",
-              "right": "2rem",
-              "color": "@cardico",
-              "font-size": "~\"@{icon2}rem\""
+              "opacity": "0",
+              "cursor": "pointer"
             },
-            ".text-box": {
-              "padding": "20px",
-              "p": {
-                "margin": "0"
-              }
-            },
-            ".ico-box": {
-              "display": "flex",
-              "-webkit-align-items": "center",
-              "align-items": "center",
-              "padding": "0px",
-              "p": {
-                "margin": "0"
-              }
-            },
-            ".ico-wrap": {
-              "display": "flex",
-              "-webkit-justify-content": "space-between",
-              "justify-content": "space-between",
-              "padding": "0.5rem"
-            },
-            ".p-box": {
-              "background-color": "@hover",
-              "width": "100%",
-              "padding": "10px",
-              "display": "flex",
-              "-webkit-justify-content": "space-between",
-              "justify-content": "space-between",
-              "p": {
-                "padding": "10px",
-                "margin": "0",
-                "line-height": "1.5"
-              }
-            },
-            ".card-box": {
+            ".checkmark": {
               "position": "absolute",
-              "width": "100%",
-              "bottom": "0px",
+              "top": "0",
               "left": "0",
-              "padding": "0px",
-              "transition": "all 0.3s"
+              "height": "25px",
+              "width": "25px",
+              "background-color": "#eee"
+            },
+            ".container2:hover input ~ .checkmark": {
+              "background-color": "#ccc"
+            },
+            ".container2 input:checked ~ .checkmark": {
+              "background-color": "#2196F3"
+            },
+            ".checkmark:after": {
+              "content": "\"\"",
+              "position": "absolute",
+              "display": "none"
+            },
+            ".container2 input:checked ~ .checkmark:after": {
+              "display": "block"
+            },
+            ".container2 .checkmark:after": {
+              "left": "10px",
+              "top": "7px",
+              "width": "5px",
+              "height": "10px",
+              "border": "solid white",
+              "border-width": "0 3px 3px 0",
+              "-webkit-transform": "rotate(45deg)",
+              "-ms-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)"
             },
             ".mbr-section-title": {
-              "color": "#656565"
-            },
-            "& when not (@showText)": {
-              ".card-box": {
-                "bottom": "0px"
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".card-box": {
-                "bottom": "0px"
-              },
-              ".p-box": {
-                "padding": "0px"
-              },
-              ".card-title": {
-                "padding": "10px 15px"
-              }
-            },
-            ".card-text": {
-              "color": "#656565"
-            },
-            ".phone": {
-              "color": "#274abb",
-              "text-align": "center"
-            },
-            ".card-title2": {
-              "color": "#333333",
-              "text-align": "left"
+              "text-align": "left",
+              "color": "#000000"
             }
           },
-          "_name": "features04",
-          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Main Title\" name=\"showMaintitle\" checked>\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Info\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Meta\" name=\"showMeta\">\n        <header>Colors</header>\n        <input type=\"color\" title=\"Card\" value=\"#f1f1f1\" name=\"hover\" selected>\n        <input type=\"color\" title=\"Card Hover\" value=\"#274abb\" name=\"hover2\" selected>\n        <input type=\"color\" title=\"Icon\" value=\"#274abb\" name=\"icocolor\" selected>\n        <input type=\"color\" title=\"Image Icon\" value=\"#ffffff\" name=\"cardico\" selected>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Icon\" name=\"icon1\" min=\"0.2\" max=\"2\" step=\"0.1\" value=\"1.3\">\n        <input type=\"range\" inline title=\"Image Icon\" name=\"icon2\" min=\"0.2\" max=\"3\" step=\"0.1\" value=\"1.9\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=x9vz-axHndk\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-1 mbr-normal mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showMaintitle\" data-app-selector=\".mbr-section-title\">Home Inspection Process</h2>\n        <div class=\"row row-content justify-content-center\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-4': cardsAmount == '3'|| cardsAmount =='5'|| cardsAmount== '6'}\">\n\n\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/wmsvid-1076x450.png\" title alt>\n                        <div class=\"card-box\">\n                            <h4 class=\"card-title mbr-fonts-style mbr-white mbr-bold\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"https://drive.google.com/open?id=1OSG8C2B3X8TpZat9mnKPlmlXEC4Doz_k\" target=\"_blank\" class=\"text-white\">Click HERE to watch video</a></h4>\n\n                            <a href=\"https://drive.google.com/open?id=1OSG8C2B3X8TpZat9mnKPlmlXEC4Doz_k\" target=\"_blank\"><div mbr-icon class=\"mbr-iconfont mbr-iconfont-social icobig mbri-play\" mbr-if=\"showTitle\"></div></a>\n\n                        </div>\n                    </div>\n\n                    <div class=\"text-box\">\n                        <h4 class=\"card-title2 mbr-fonts-style mbr-normal\" mbr-theme-style=\"display-7\" data-app-selector=\".card-title2\">Schedule your inspection TODAY!</h4>\n                        <div class=\"ico-box\">\n                            <a href=\"WMSHomeInspectionScheduler.html\" target=\"_blank\"><span mbr-icon class=\"pr-2 mbr-iconfont mbr-iconfont-social ico2 mbri-search\"></span></a>\n                            <p class=\"mbr-text mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">CLICK HERE &nbsp;TO SCHEDULE AN APPOINTMENT</p>\n                        </div>\n                    </div>\n                    <div class=\"p-box\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">700 sq m\n                            <br>2 Bathrooms\n                            <br>\n                        </p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">Rooms 4\n                            <br>&nbsp;\n                            <br>\n                        </p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">2&nbsp;Bedrooms\n                            <br>\n                            <br>\n                        </p>\n                    </div>\n\n                    <div class=\"ico-wrap\" mbr-if=\"showMeta\">\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social ico2 mbri-user\"></span>\n                            <p class=\"mbr-text mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">Tom Wilson</p>\n                        </div>\n\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social ico2 mbri-calendar\"></span>\n                            <p class=\"mbr-text pr-2 mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">23.10.18</p>\n                        </div>\n\n                    </div>\n\n\n                </div>\n            </div>\n\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-4': cardsAmount == '3'|| cardsAmount =='5'|| cardsAmount== '6'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/img/02.jpg\" title alt>\n                        <div class=\"card-box\">\n                            <h4 class=\"card-title mbr-fonts-style mbr-white mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">$330,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\n                                &nbsp; &nbsp;\n                                <br>$568 / sq m</h4>\n\n                            <div mbr-icon class=\"mbr-iconfont mbr-iconfont-social icobig mbri-star\" mbr-if=\"showTitle\"></div>\n\n                        </div>\n                    </div>\n\n                    <div class=\"text-box\">\n                        <h4 class=\"card-title2 mbr-fonts-style mbr-normal\" mbr-theme-style=\"display-7\" data-app-selector=\".card-title2\">Hi-Tech Apartment&nbsp;</h4>\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"pr-2 mbr-iconfont mbr-iconfont-social ico2 mbri-pin\"></span>\n                            <p class=\"mbr-text mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">Las Vegas, &nbsp;32 Street</p>\n                        </div>\n                    </div>\n                    <div class=\"p-box\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">600 sq m\n                            <br>1 Bathrooms\n                            <br>\n                        </p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">Rooms 2\n                            <br>&nbsp;\n                            <br>\n                        </p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">1&nbsp;Bedrooms\n                            <br>\n                            <br>\n                        </p>\n                    </div>\n\n                    <div class=\"ico-wrap\" mbr-if=\"showMeta\">\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social ico2 mbri-user\"></span>\n                            <p class=\"mbr-text mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">Jane Smith</p>\n                        </div>\n\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social ico2 mbri-calendar\"></span>\n                            <p class=\"mbr-text pr-2 mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">13.09.18</p>\n                        </div>\n\n                    </div>\n\n\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-4': cardsAmount == '3'|| cardsAmount =='5'|| cardsAmount== '6'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/img/03.jpg\" title alt>\n                        <div class=\"card-box\">\n                            <h4 class=\"card-title mbr-fonts-style mbr-white mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">$380,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\n                                &nbsp; &nbsp;\n                                <br>$654 / sq m</h4>\n\n                            <div mbr-icon class=\"mbr-iconfont mbr-iconfont-social icobig mbri-star\" mbr-if=\"showTitle\"></div>\n\n                        </div>\n                    </div>\n\n                    <div class=\"text-box\">\n                        <h4 class=\"card-title2 mbr-fonts-style mbr-normal\" mbr-theme-style=\"display-7\" data-app-selector=\".card-title2\">Creative Apartment&nbsp;</h4>\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"pr-2 mbr-iconfont mbr-iconfont-social ico2 mbri-pin\"></span>\n                            <p class=\"mbr-text mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">London, &nbsp;Summer Avenue</p>\n                        </div>\n                    </div>\n                    <div class=\"p-box\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">800 sq m\n                            <br>1 Bathrooms\n                            <br>\n                        </p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">Rooms 3\n                            <br>&nbsp;\n                            <br>\n                        </p>\n                        <p class=\"mbr-text mbr-fonts-style mbr-normal card-text\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">2 Bedrooms\n                            <br>\n                        </p>\n                    </div>\n\n                    <div class=\"ico-wrap\" mbr-if=\"showMeta\">\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social ico2 mbri-user\"></span>\n                            <p class=\"mbr-text mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">Ann Sterling</p>\n                        </div>\n\n                        <div class=\"ico-box\">\n                            <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social ico2 mbri-calendar\"></span>\n                            <p class=\"mbr-text pr-2 mbr-fonts-style phone mbr-normal\" mbr-theme-style=\"display-4\" data-app-selector=\".phone\">08.04.18</p>\n                        </div>\n\n                    </div>\n\n\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</section>",
-          "_cid": "rCEt42pDz3",
-          "_anchor": "features04-3d",
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" value=\"2\">\n        <select title=\"Items\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Colors</header>\n        <input type=\"color\" title=\"Line\" value=\"#274abb\" name=\"line\" selected>\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=x9vz-axHndk\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Why hire WMS Home Inspection Services?</h2>\n\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"></p>\n\n            </div>\n\n            <div class=\"col-md-4\" mbr-if=\"cardsAmount > 1\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Cooling: Central Cooling\n                </p>\n\n            </div>\n\n            <div class=\"col-md-4\" mbr-if=\"cardsAmount > 2\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Sewer: Public/City\n                </p>\n\n            </div>\n\n            <div class=\"col-md-4\" mbr-if=\"cardsAmount > 3\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Parking: Attached Garage\n                </p>\n\n            </div>\n\n            <div class=\"col-md-4\" mbr-if=\"cardsAmount > 4\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Heating: Forced Air, Gas\n                </p>\n\n            </div>\n\n            <div class=\"col-md-4\" mbr-if=\"cardsAmount > 5\">\n\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Water: City\n                </p>\n\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "rCGSBMefhY",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "content2-3n"
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<center><iframe src=\"https://player.vimeo.com/video/361465902\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"\"></iframe>\n<p><a href=\"https://vimeo.com/361465902\">WMS Home Inspection- Certified Inspectors</a> from <a href=\"https://vimeo.com/webdesignsbymel\">mel wms</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p></center>",
+          "_customCSS": "",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-3i",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
